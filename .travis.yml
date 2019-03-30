@@ -6,4 +6,4 @@ before_install:
   - docker build -t slavastartsev/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run slavastartsev/docker-react npm run test --runInBand --maxWorkers=4 --coverage
+  - docker run slavastartsev/docker-react npm run test -- --runInBand --maxWorkers=4 --coverage
